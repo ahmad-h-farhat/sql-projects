@@ -4,7 +4,13 @@ This project simulates an end-to-end **ETL pipeline** for financial transaction 
 
 ---
 
-## 🚀 Project Structure## 🧠 Business Context 
+## 🚀 Project Structure
+
+etl_finance/ ├── load_transactions.sql → Load raw CSV into staging ├── clean_transactions.sql → Clean and standardize data (currency normalization, filtering, etc.) ├── scd_clients.sql → Simulate Slowly Changing Dimensions (Type 2) for client profile tracking ├── revenue_by_client.sql → KPI: Total revenue per client in USD └── data/ └── transactions.csv → Mock source transaction data
+
+---
+
+## 🧠 Business Context
 
 Imagine a financial firm managing asset transactions from global clients. This project reflects typical BI/data engineering work in such environments:
 - Tracking client portfolio changes
@@ -16,9 +22,9 @@ Imagine a financial firm managing asset transactions from global clients. This p
 
 ## 🛠️ Tech Stack
 
-- SQL (PostgreSQL/DuckDB-style)
+- SQL (PostgreSQL / DuckDB-style syntax)
 - GitHub (for versioning and showcasing)
-- CSV-based mock datasets (to be uploaded in /data)
+- CSV-based mock datasets (in `/data` folder)
 
 ---
 
@@ -26,29 +32,22 @@ Imagine a financial firm managing asset transactions from global clients. This p
 
 | Step                     | Description                                                                 |
 |--------------------------|-----------------------------------------------------------------------------|
-| load_transactions.sql | Loads raw transactions data from CSV into a staging table                   |
-| clean_transactions.sql| Cleans data, handles NULLs, standardizes formats, and converts currency     |
-| scd_clients.sql        | Implements SCD Type 2 for tracking historical changes in client profiles    |
+| `load_transactions.sql` | Loads raw transactions data from CSV into a staging table                   |
+| `clean_transactions.sql`| Cleans data, handles NULLs, standardizes formats, and converts currency     |
+| `scd_clients.sql`        | Implements SCD Type 2 for tracking historical changes in client profiles    |
 
 ---
 
-## 📊 Key Features
+## 📈 KPI Analytics
 
-- 💰 Currency conversion (EUR, GBP → USD)
-- 🧽 Data validation and filtering
-- 🧾 Historical tracking of client changes
-- 🏗️ Modular and reusable SQL logic
-- 📁 Realistic project structure ready for extension
-
----
-
-## 🔜 Coming Soon
-
-- ✅ Uploaded mock transaction data in `/data/transactions.csv`
-- Optional extension: analytics KPIs (e.g., revenue by client, daily trading volume, etc.)
-- Visualization layer using Tableau 
-
+| Script                   | Description                                                  |
+|--------------------------|--------------------------------------------------------------|
+| `revenue_by_client.sql` | Shows total revenue per client in USD                        |
+| *(coming soon)*         | Daily transaction volume, portfolio breakdown, client rankings|
 
 ---
 
-> ✅ This project is designed to simulate real-world data engineering tasks using accessible tools and clean SQL. Great for recruiters, hiring managers, and BI professionals.
+## 📁 Data Sample
+
+✅ Uploaded mock transaction data: `/data/transactions.csv`  
+Includes client IDs, transaction dates, asset amounts, and currency types.
