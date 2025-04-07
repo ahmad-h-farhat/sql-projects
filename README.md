@@ -44,7 +44,7 @@ Imagine a financial firm managing asset transactions from global clients. This p
 
 ## 🔜 Coming Soon
 
-- Upload of realistic sample data in /data/
+- ✅ Uploaded mock transaction data in `/data/transactions.csv`
 - Optional extension: analytics KPIs (e.g., revenue by client, daily trading volume, etc.)
 - Visualization layer using Tableau 
 
