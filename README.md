@@ -38,13 +38,17 @@ Imagine a financial firm managing asset transactions from global clients. This p
 
 ---
 
+
 ## 📈 KPI Analytics
 
-| Script                   | Description                                                  |
-|--------------------------|--------------------------------------------------------------|
-| `revenue_by_client.sql` | Shows total revenue per client in USD                        |
-| *(coming soon)*         | Daily transaction volume, portfolio breakdown, client rankings|
-
+| Script                        | Description                                                  |
+|-------------------------------|--------------------------------------------------------------|
+| `revenue_by_client.sql`       | Shows total revenue per client in USD                        |
+| `daily_trading_volume.sql`    | Calculates total transaction volume per day in USD           |
+| `top_clients.sql`             | Identifies top 5 clients by total revenue in USD             |
+| `portfolio_breakdown.sql`     | Shows investment distribution by asset type (USD & percentage of total) |
+| `top_clients_by_revenue.sql`  | Ranks clients by total revenue                               |
+| `arpu.sql`                    | Calculates Average Revenue Per User (ARPU) in USD            |
 ---
 
 ## 📁 Data Sample
