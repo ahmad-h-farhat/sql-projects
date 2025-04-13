@@ -4,7 +4,7 @@
 SELECT
     client_id,
     ROUND(SUM(amount_usd), 2) AS total_revenue_usd
-FROM cleaned_transactions
+FROM clean_transactions
 GROUP BY client_id
 ORDER BY total_revenue_usd DESC
 LIMIT 10;
