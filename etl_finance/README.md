@@ -3,6 +3,19 @@
 This project simulates an end-to-end **ETL pipeline** for financial transaction data, using SQL to model a real-world use case in a business intelligence and analytics environment. It includes raw data ingestion, cleaning & transformation, and dimensional modeling with Slowly Changing Dimensions (SCD Type 2).
 
 ---
+## 📊 Dashboard Preview
+
+Explore the Financial KPIs Dashboard built in Excel Online.
+
+## Preview:
+
+![Dashboard Preview](docs/dashboard_preview.png)
+
+## Download Full Dashboard:
+
+[Download etl_finance_dashboard.xlsx](docs/etl_finance_dashboard.xlsx)
+
+---
 
 ## 🚀 Project Structure
 
