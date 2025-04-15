@@ -62,7 +62,6 @@ etl_finance/
 │
 └── README.md
 
-
 ---
 
 ## 📊 KPI Overview
