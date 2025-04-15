@@ -1,70 +1,97 @@
 # 💼 Financial Transactions Data Engineering Project
 
-This project simulates an end-to-end **ETL pipeline** for financial transaction data, using SQL to model a real-world use case in a business intelligence and analytics environment. It includes raw data ingestion, cleaning & transformation, and dimensional modeling with Slowly Changing Dimensions (SCD Type 2).
-
----
-## 📊 Dashboard Preview
-
-Explore the Financial KPIs Dashboard built in Excel Online.
-
-## Preview:
-
-![Dashboard Preview](docs/dashboard_preview.png)
-
-## Download Full Dashboard:
-
-[Download etl_finance_dashboard.xlsx](docs/etl_finance_dashboard.xlsx)
-
----
-
-## 🚀 Project Structure
-
-etl_finance/ ├── load_transactions.sql → Load raw CSV into staging ├── clean_transactions.sql → Clean and standardize data (currency normalization, filtering, etc.) ├── scd_clients.sql → Simulate Slowly Changing Dimensions (Type 2) for client profile tracking ├── revenue_by_client.sql → KPI: Total revenue per client in USD └── data/ └── transactions.csv → Mock source transaction data
+This project simulates a real-world ETL pipeline and KPI analytics workflow for a financial firm managing global client transactions. The project was built entirely using SQL (DuckDB) for ETL, KPI calculation, and Excel for dashboard visualization.
 
 ---
 
 ## 🧠 Business Context
 
-Imagine a financial firm managing asset transactions from global clients. This project reflects typical BI/data engineering work in such environments:
-- Tracking client portfolio changes
-- Calculating revenue in a standardized currency
-- Preserving historical versions of client profiles
-- Preparing clean, analytical data for dashboards or KPIs
+A financial company handles hundreds of daily transactions from international clients across different currencies. Management needs reliable KPIs to track revenue, client activity, and portfolio distribution — but raw data is messy, inconsistent, and non-standardized.
+
+This project solves that by building a clean ETL pipeline to transform raw transaction data into a powerful source of business insight.
+
+---
+
+## 🚀 Solution Overview
+
+### ETL Pipeline Flow:
+
+1. Load raw data from CSV  
+2. Clean & standardize the data (currency conversion, date formatting, removing duplicates)  
+3. Apply Slowly Changing Dimensions (SCD) to track client profile changes  
+4. Generate KPIs using clean analytical tables  
+5. Visualize results in Excel dashboard  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- SQL (PostgreSQL / DuckDB-style syntax)
-- GitHub (for versioning and showcasing)
-- CSV-based mock datasets (in `/data` folder)
+- SQL (DuckDB style)  
+- DuckDB  
+- Excel (Online) for dashboard visualization  
+- GitHub for version control & project showcasing  
 
 ---
 
-## 🧹 ETL Pipeline Overview
+## 📁 Folder Structure
 
-| Step                     | Description                                                                 |
-|--------------------------|-----------------------------------------------------------------------------|
-| `load_transactions.sql` | Loads raw transactions data from CSV into a staging table                   |
-| `clean_transactions.sql`| Cleans data, handles NULLs, standardizes formats, and converts currency     |
-| `scd_clients.sql`        | Implements SCD Type 2 for tracking historical changes in client profiles    |
+```text
+etl_finance/
+├── data/                      # Raw source data
+│   └── transactions.csv
+│
+├── etl/                       # ETL SQL scripts
+│   ├── load_transactions.sql
+│   ├── clean_transactions.sql
+│   └── scd_clients.sql
+│
+├── kpi_analytics/             # KPI calculation SQL queries
+│   ├── revenue_by_client.sql
+│   ├── daily_trading_volume.sql
+│   ├── arpu.sql
+│   ├── top_clients.sql
+│   ├── top_clients_by_revenue.sql
+│   └── portfolio_breakdown.sql
+│
+├── tests/                     # Testing & validation scripts
+│   └── README.md
+│
+├── docs/                      # Deliverables
+│   ├── etl_finance_dashboard.xlsx
+│   └── dashboard_preview.png
+│
+└── README.md
+
 
 ---
 
+## 📊 KPI Overview
 
-## 📈 KPI Analytics
+| SQL Query                      | Description                                    |
+|--------------------------------|------------------------------------------------|
+| `revenue_by_client.sql`        | Total revenue per client (USD)                |
+| `daily_trading_volume.sql`     | Total transaction volume per day (USD)        |
+| `arpu.sql`                     | Average Revenue Per User (ARPU)               |
+| `top_clients.sql`              | Top 5 clients by total revenue                |
+| `top_clients_by_revenue.sql`   | Top 10 clients ranked by revenue              |
+| `portfolio_breakdown.sql`      | Portfolio breakdown by asset type (USD & %)  |
 
-| Script                        | Description                                                  |
-|-------------------------------|--------------------------------------------------------------|
-| `revenue_by_client.sql`       | Shows total revenue per client in USD                        |
-| `daily_trading_volume.sql`    | Calculates total transaction volume per day in USD           |
-| `top_clients.sql`             | Identifies top 5 clients by total revenue in USD             |
-| `portfolio_breakdown.sql`     | Shows investment distribution by asset type (USD & percentage of total) |
-| `top_clients_by_revenue.sql`  | Ranks clients by total revenue                               |
-| `arpu.sql`                    | Calculates Average Revenue Per User (ARPU) in USD            |
 ---
 
-## 📁 Data Sample
+## 📈 Dashboard Preview
 
-✅ Uploaded mock transaction data: `/data/transactions.csv`  
-Includes client IDs, transaction dates, asset amounts, and currency types.
+Interactive Excel dashboard visualizing all KPIs and trends.
+
+![Dashboard Preview](docs/dashboard_preview.png)
+
+📥 [Download the full Excel Dashboard here](docs/etl_finance_dashboard.xlsx)
+
+---
+
+## 🎯 Project Highlights
+
+- ✅ Clean ETL pipeline fully in SQL  
+- 📊 Realistic business KPIs for financial analytics  
+- 📈 Excel dashboard for visualization  
+- 🧠 Structured like a real-world BI/Data Engineering project  
+- 🧱 Beginner-friendly but professional-standard  
