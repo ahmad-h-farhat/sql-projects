@@ -74,7 +74,7 @@ etl_finance/
 | `top_clients.sql`              | Top 5 clients by total revenue                |
 | `top_clients_by_revenue.sql`   | Top 10 clients ranked by revenue              |
 | `portfolio_breakdown.sql`      | Portfolio breakdown by asset type (USD & %)  |
-```
+
 ---
 
 ## 📈 Dashboard Preview
@@ -84,7 +84,7 @@ Interactive Excel dashboard visualizing all KPIs and trends.
 ![Dashboard Preview](docs/dashboard_preview.png)
 
 📥 [Download the full Excel Dashboard here](docs/etl_finance_dashboard.xlsx)
-```
+
 ---
 
 ## 🎯 Project Highlights
@@ -94,4 +94,4 @@ Interactive Excel dashboard visualizing all KPIs and trends.
 - 📈 Excel dashboard for visualization  
 - 🧠 Structured like a real-world BI/Data Engineering project  
 - 🧱 Beginner-friendly but professional-standard
-```
+
