@@ -95,7 +95,7 @@ Interactive Excel dashboard visualizing all KPIs and trends.
 
 - ✅ Clean ETL pipeline fully in SQL  
 - 📊 Realistic business KPIs for financial analytics  
-- 📈 Excel dashboard for visualization  
+- 📈 Excel and Tableau dashboard for visualization  
 - 🧠 Structured like a real-world BI/Data Engineering project  
 - 🧱 Beginner-friendly but professional-standard
 
