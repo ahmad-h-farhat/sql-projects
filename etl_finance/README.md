@@ -74,18 +74,6 @@ etl_finance/
 | `top_clients.sql`              | Top 5 clients by total revenue                |
 | `top_clients_by_revenue.sql`   | Top 10 clients ranked by revenue              |
 | `portfolio_breakdown.sql`      | Portfolio breakdown by asset type (USD & %)  |
----
-
-## 📊 KPI Overview
-
-| SQL Query                      | Description                                    |
-|--------------------------------|------------------------------------------------|
-| `revenue_by_client.sql`        | Total revenue per client (USD)                |
-| `daily_trading_volume.sql`     | Total transaction volume per day (USD)        |
-| `arpu.sql`                     | Average Revenue Per User (ARPU)               |
-| `top_clients.sql`              | Top 5 clients by total revenue                |
-| `top_clients_by_revenue.sql`   | Top 10 clients ranked by revenue              |
-| `portfolio_breakdown.sql`      | Portfolio breakdown by asset type (USD & %)  |
 ```
 ---
 
