@@ -61,31 +61,6 @@ etl_finance/
 │   └── dashboard_preview.png
 │
 └── README.md
-etl_finance/
-├── data/                      # Raw source data
-│   └── transactions.csv
-│
-├── etl/                       # ETL SQL scripts
-│   ├── load_transactions.sql
-│   ├── clean_transactions.sql
-│   └── scd_clients.sql
-│
-├── kpi_analytics/             # KPI calculation SQL queries
-│   ├── revenue_by_client.sql
-│   ├── daily_trading_volume.sql
-│   ├── arpu.sql
-│   ├── top_clients.sql
-│   ├── top_clients_by_revenue.sql
-│   └── portfolio_breakdown.sql
-│
-├── tests/                     # Testing & validation scripts
-│   └── README.md
-│
-├── docs/                      # Deliverables
-│   ├── etl_finance_dashboard.xlsx
-│   └── dashboard_preview.png
-│
-└── README.md
 ```
 ---
 
