@@ -60,7 +60,7 @@ etl_finance/
 │   ├── etl_finance_dashboard.xlsx
 │   └── dashboard_preview.png
 │
-└── README.md ` ```
+└── README.md
 
 ---
 
