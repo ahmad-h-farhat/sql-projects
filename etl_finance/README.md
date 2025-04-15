@@ -74,7 +74,6 @@ etl_finance/
 | `top_clients.sql`              | Top 5 clients by total revenue                |
 | `top_clients_by_revenue.sql`   | Top 10 clients ranked by revenue              |
 | `portfolio_breakdown.sql`      | Portfolio breakdown by asset type (USD & %)  |
-```
 ---
 
 ## 📊 KPI Overview
