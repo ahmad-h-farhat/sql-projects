@@ -86,7 +86,9 @@ Interactive Excel dashboard visualizing all KPIs and trends.
 📥 [Download the full Excel Dashboard here](docs/etl_finance_dashboard.xlsx)
 
 ---
+## 📊 Tableau Dashboard Overview
 
+![Financial KPI Overview](docs/Tableau Dashboard Preview.png)
 ## 🎯 Project Highlights
 
 - ✅ Clean ETL pipeline fully in SQL  
