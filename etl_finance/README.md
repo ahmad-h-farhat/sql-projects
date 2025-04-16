@@ -58,7 +58,9 @@ etl_finance/
 │
 ├── docs/                      # Deliverables
 │   ├── etl_finance_dashboard.xlsx
-│   └── dashboard_preview.png
+│   ├── dashboard_preview.png
+│   ├── Tableau_Dashboard_Preview.png
+│   └── Book1.twb
 │
 └── README.md
 ```
