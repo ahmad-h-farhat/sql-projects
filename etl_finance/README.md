@@ -20,7 +20,7 @@ This project solves that by building a clean ETL pipeline to transform raw trans
 2. Clean & standardize the data (currency conversion, date formatting, removing duplicates)  
 3. Apply Slowly Changing Dimensions (SCD) to track client profile changes  
 4. Generate KPIs using clean analytical tables  
-5. Visualize results in Excel dashboard  
+5. Visualize results in Excel and Tableau dashboard  
 
 ---
 
@@ -28,7 +28,8 @@ This project solves that by building a clean ETL pipeline to transform raw trans
 
 - SQL (DuckDB style)  
 - DuckDB  
-- Excel (Online) for dashboard visualization  
+- Excel (Online) for dashboard visualization
+- Tableau  
 - GitHub for version control & project showcasing  
 
 ---
