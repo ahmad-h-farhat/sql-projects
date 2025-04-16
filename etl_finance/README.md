@@ -14,7 +14,7 @@ This project solves that by building a clean ETL pipeline to transform raw trans
 
 ## 🚀 Solution Overview
 
-### ETL (Extact, Transform, Load) Pipeline Flow:
+### ETL Pipeline Flow:
 
 1. Load raw data from CSV  
 2. Clean & standardize the data (currency conversion, date formatting, removing duplicates)  
