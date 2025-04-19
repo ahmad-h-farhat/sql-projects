@@ -54,9 +54,6 @@ etl_finance/
 │   ├── top_clients_by_revenue.sql
 │   └── portfolio_breakdown.sql
 │
-├── tests/                     # Testing & validation scripts
-│   └── README.md
-│
 ├── docs/                      # Deliverables
 │   ├── etl_finance_dashboard.xlsx
 │   ├── dashboard_preview.png
