@@ -1,4 +1,4 @@
-# 💼 Financial Transactions Data Engineering Project
+# 💼 Financial KPI Dashboard – SQL & Tableau 
 
 This project simulates a real-world ETL pipeline and KPI analytics workflow for a financial firm managing global client transactions. The project was built entirely using SQL (DuckDB) for ETL, KPI calculation, and Excel for dashboard visualization.
 
